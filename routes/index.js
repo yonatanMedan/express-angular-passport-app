@@ -30,7 +30,7 @@ module.exports = function(passport){
     });
 
     router.post('/signup',passport.authenticate('local-signup',{
-      successRedirect:'/profile',
+      successRedirect:'/app',
       failureRedirect:'/signup',
       failureFlash:true
     }));
